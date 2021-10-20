@@ -1,4 +1,4 @@
-from singleton.infrastucture.cache.cache import Cache
+from design_patterns.singleton.v1.infrastucture.cache.cache import Cache
 
 
 if __name__ == "__main__":
