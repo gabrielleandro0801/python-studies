@@ -2,6 +2,7 @@ def memoize(f):
     memo = {}
     def helper(x):
         if x not in memo:
+            print(f'== Value for parameter [{x}] not in cache, setting now ==')
             memo[x] = f(x)
         return memo[x]
     return helper
@@ -18,14 +19,6 @@ def fib(n):
 
 
 if __name__ == '__main__':
-    my_number = 5
-    fib_my_number = fib(my_number)
-    print(f'Fibonacci of {my_number}: [{fib_my_number}], caching values internally')
-
-    my_number = 3
-    fib_my_number = fib(fib_my_number)
-    print(f'Fibonacci of {my_number}: [{fib_my_number}], obtained from internal cache')
-
-    my_number = 7
-    fib_my_number = fib(fib_my_number)
-    print(f'Fibonacci of {my_number}: [{fib_my_number}], not in cache, executing function fib()')
+    for number in range(10, -1, -1):
+        fib_my_number = fib(number)
+        print(f'Fibonacci of {number}: [{fib_my_number}], executing fib() and caching values if not exists')
