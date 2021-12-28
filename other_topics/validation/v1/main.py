@@ -62,8 +62,10 @@ def check(schema_validator, data_name, data, schema):
 
 
 if __name__ == '__main__':
-    validator = Validator()
+    # Validating schemas using lib Cerberus - v1
+    # Validating simple dicts, arrays and strings
 
+    validator = Validator()
     check(validator, 'A', dict_a, schema_a)
     check(validator, 'B', dict_b, schema_b)
     check(validator, 'C', dict_c, schema_c)

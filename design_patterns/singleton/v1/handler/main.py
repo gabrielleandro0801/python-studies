@@ -26,4 +26,6 @@ def main():
 
 
 if __name__ == "__main__":
+    # Singleton - v1
+    # Using a single redis connection in the program not to instantiate many connections
     main()

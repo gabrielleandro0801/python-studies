@@ -17,6 +17,9 @@ def to_square(n, s):
 
 
 if __name__ == '__main__':
+    # Memoization - v2
+    # Creating a decorator class to cache locally the input/output of a function
+
     for number in range(10, -1, -1):
         fib_my_number = fib(number)
         print(f'\nFibonacci of {number}: [{fib_my_number}]')

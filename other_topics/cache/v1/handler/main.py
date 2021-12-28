@@ -13,6 +13,9 @@ def fib(n):
 
 
 if __name__ == '__main__':
+    # Cache using lib cachetools - v1
+    # Caching values in a simple dict
+
     print('The first execution will call the function for each number.')
     first = fib(7)
 

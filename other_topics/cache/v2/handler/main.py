@@ -17,6 +17,9 @@ def fib(n):
 
 
 if __name__ == '__main__':
+    # Cache using lib cachetools - v2
+    # Caching values in a simple dict which maxsize is 1024 and the TTL of cache is 10s
+
     print(f'Executing for the first time and caching it locally for {SECONDS_TTL_CACHE}s')
     print(f'Fibonacci de 10: [{fib(10)}]')
 

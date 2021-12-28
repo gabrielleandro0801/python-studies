@@ -12,6 +12,9 @@ def fib(n):
 
 
 if __name__ == '__main__':
+    # Memoization - v1
+    # Creating a decorator function to cache locally the input/output of a function
+
     for number in range(10, -1, -1):
         fib_my_number = fib(number)
         print(f'Fibonacci of {number}: [{fib_my_number}], executing fib() and caching values if not exists\n')
