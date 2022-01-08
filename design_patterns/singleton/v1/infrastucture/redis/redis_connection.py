@@ -19,11 +19,11 @@ class Cache:
                 return key
             redis_key = self.connection.get(key)
             return redis_key.decode('utf-8') if redis_key is not None else None
-        except Exception as e:
+        except Exception:
             return None
 
     def set(self, key: str, value: str, time: int) -> None:
         try:
             self.connection.set(key, value, ex=time)
-        except Exception as e:
+        except Exception:
             pass
