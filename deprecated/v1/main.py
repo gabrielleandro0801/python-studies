@@ -29,7 +29,7 @@ def function_five(message):
 @deprecated("This class is deprecated")
 class MyClass:
     def __init__(self):
-        pass
+        print(f"[Constructor of {MyClass.__name__}] called")
 
 
 if __name__ == '__main__':
